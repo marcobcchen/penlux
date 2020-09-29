@@ -1,0 +1,6 @@
+{
+  // alias for @
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src"
+  }
+}
