@@ -38,6 +38,7 @@ module.exports = {
       '@': path.resolve(__dirname, 'src/'),
     }
   },
+  devtool: "cheap-module-eval-source-map",
 	devServer: {
     port: 3000,
     contentBase: './dist'
