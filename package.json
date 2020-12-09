@@ -29,6 +29,7 @@
     "file-loader": "^6.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-intl": "^5.10.6",
     "react-router-dom": "^5.2.0",
     "style-loader": "^1.2.1",
     "styled-components": "^5.2.1",

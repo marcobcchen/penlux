@@ -9,10 +9,6 @@ export const NavSC = styled.div`
     margin-right: 35px;
   }
 
-  .btnCart{
-    
-  }
-
   .btnMenu{
     position: relative;
     z-index: 20;
@@ -94,13 +90,15 @@ export const NavListSC = styled.div`
     position: absolute;
     left: 16px;
     bottom: 20px;
+    display: flex;
 
-    > a{
+    > div{
       color: black;
       font-size: 12px;
       margin-right: 10px;
       text-decoration: none;
       border-bottom: 3px solid white;
+      cursor: pointer;
 
       &:hover {
         text-decoration: none;
@@ -108,8 +106,16 @@ export const NavListSC = styled.div`
       }
 
       &.active{
-        border-bottom: 3px solid black;
+        
       }
+    }
+
+    .en{
+      ${(props) => (props.language === 'en' ? 'border-bottom: 3px solid black' : null)};
+    }
+
+    .zh{
+      ${(props) => (props.language === 'zh-TW' ? 'border-bottom: 3px solid black' : null)};
     }
 
     @media (min-width: ${({ theme }) => theme.breakPiont.md}) {

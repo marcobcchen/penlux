@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import iconCart from '@/assets/images/global/icon_cart.svg';
 import CartSC from './style';
 
-const Cart = () => {
-  const [isList, setIsList] = useState(false);
+const Cart = (props) => {
+  const { isOpen } = props;
+  const [isList, setIsList] = useState(isOpen);
 
   const onMouseOverHandler = () => {
     setIsList(true);
   };
+
   const onMouseOutHandler = () => {
     setIsList(false);
   };
+
+  useEffect(() => {
+    if (isOpen) setIsList(false);
+  }, [isOpen]);
 
   return (
     <CartSC isList={isList} onMouseEnter={onMouseOverHandler}>

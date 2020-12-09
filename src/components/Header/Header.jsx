@@ -6,6 +6,7 @@ import { HeaderSC, LogoSC } from './style';
 
 const Header = () => {
   const name = 'header';
+
   return (
     <HeaderSC>
       <LogoSC href="" alt={name}>

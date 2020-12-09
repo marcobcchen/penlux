@@ -51,7 +51,7 @@ const CartSC = styled.div`
     .btnChectout{
       display: block;
       color: black;
-      background: #f3f3f3;
+      background: ${({ theme }) => theme.color.primary};
       text-decoration: none;
       padding: 5px;
       text-align: center;
