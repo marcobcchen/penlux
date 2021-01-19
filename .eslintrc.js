@@ -25,5 +25,6 @@ module.exports = {
     'react/prop-types': [0], // 不進行 prop-types 驗證
     'no-unused-vars': [1], // 取消未使用的變數限制
     'max-len': [2, { "code": 180 }],
+    'no-unused-expressions': [0],
   },
 };

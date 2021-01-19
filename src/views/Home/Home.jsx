@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Row, Col } from '@/components/Grid';
+import CallToAction from '@/components/CallToAction/';
 import kv1 from '@/assets/images/home/kv_md_1.jpg';
 import HomeSC from './style';
 
@@ -10,7 +11,7 @@ const Home = () => (
       <Col xs={12}><img src={kv1} alt="" /></Col>
     </Row>
 
-    <Row className="about">
+    <Row className="about" justify="center">
       <Col xs={10}>
         <Row>
           <Col className="title" xs={12}>
@@ -27,6 +28,12 @@ const Home = () => (
         </Row>
       </Col>
     </Row>
+
+    <Row className="quality" justify="center">
+      <Col xs={10}>Quality</Col>
+    </Row>
+
+    <CallToAction text="EXPLORE" url="/" />
 
   </HomeSC>
 );

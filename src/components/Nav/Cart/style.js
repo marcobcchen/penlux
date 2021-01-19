@@ -48,7 +48,7 @@ const CartSC = styled.div`
       border: 1px solid black;
     }
 
-    .btnChectout{
+    .btnCheckout{
       display: block;
       color: black;
       background: ${({ theme }) => theme.color.primary};

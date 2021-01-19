@@ -10,14 +10,14 @@ export const HeaderSC = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 
   @media (min-width: ${({ theme }) => theme.breakPiont.sm}) {
     height: 88px;
   }
 `;
 
-export const LogoSC = styled.a`
-  display: block;
+export const LogoSC = styled.h1`
   width: 25%;
   margin-left: 21px;
 

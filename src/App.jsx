@@ -1,19 +1,37 @@
 import React from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
-// import Nav from './components/Nav';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import IntlContextProvider from '@/contexts/IntlContext';
+import routes from './router';
+import Wrapper from './components/Ｗrapper';
 import Header from './components/Header';
-import Home from './views/Home';
-import Press from './views/Press';
+import Footer from './components/Footer';
 
-const App = () => (
-  <IntlContextProvider>
-    <Router>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/press" component={Press} />
+const App = () => {
+  const name = '';
+  // const lo = useLocation();
+  // console.log(lo);
+
+  return (
+    <IntlContextProvider>
+      <Wrapper>
+        <Router>
+          <Switch>
+            {routes.map((route) => (
+              <Route
+                exact={route.exact}
+                key={route.path}
+                path={route.path}
+                component={route.component}
+                routes={route.routes}
+              />
+            ))}
+          </Switch>
+        </Router>
+      </Wrapper>
+      <Footer />
       <Header />
-    </Router>
-  </IntlContextProvider>
-);
+    </IntlContextProvider>
+  );
+};
 
 export default App;

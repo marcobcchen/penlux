@@ -1,26 +1,19 @@
 import styled from 'styled-components';
 
 const HomeSC = styled.div`
-  padding-top: 60px;
-
-  @media (min-width: ${({ theme }) => theme.breakPiont.sm}) {
-    padding-top: 88px;
-  }
-
   .des{
     margin-bottom: 13%;
   }
 
   .kv{
-    img{
+    /* img{
       display: block;
       width: 100%;
-    }
+    } */
   }
 
   .about{
     background-color: ${({ theme }) => theme.color.primary};
-    justify-content: center;
 
     .title{
       padding: 13% 0;
@@ -54,6 +47,10 @@ const HomeSC = styled.div`
         }
       }
     }
+  }
+
+  .quality{
+    background-color: #fff;
   }
 `;
 

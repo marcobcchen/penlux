@@ -14,7 +14,8 @@ const xsFlex = (size) => {
   if (size) {
     const width = gridWidth(size);
     return `
-      width: ${width};
+      flex: 0 0 ${width};
+      max-width: ${width};
     `;
   }
   return 'width: 100%;';
@@ -51,12 +52,8 @@ const alignItems = (props) => {
 };
 
 export const Col = styled.div`
-  /* background-color: lightsalmon; */
-  /* border: 1px solid #000; */
-  
   position: relative;
   box-sizing: border-box;
-  ${(props) => xsFlex(props.xs)}
 
   ${(props) => xsFlex(props.xs)}
 
@@ -84,4 +81,5 @@ export const Row = styled.div`
   justify-content: ${justify};
   align-items: ${alignItems};
   align-content: flex-start;
+  width: 100%;
 `;

@@ -10,7 +10,9 @@ const en = {
   menu3: 'SHOP',
   menu4: 'STOCKISTS',
   menu5: 'DIRECTION',
-  menu6: 'DIRECTION',
+  menu6: 'CONTACT',
+  product: 'product page',
+  press: 'press page',
 };
 
 export default en;

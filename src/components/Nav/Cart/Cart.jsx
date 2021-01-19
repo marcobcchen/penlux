@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { HashRouter as Router, Link } from 'react-router-dom';
 import iconCart from '@/assets/images/global/icon_cart.svg';
 import CartSC from './style';
 
@@ -38,7 +39,11 @@ const Cart = (props) => {
               <td>1</td>
             </tr>
             <tr>
-              <td colSpan="2"><a className="btnChectout" href="cart.html">Go to Chart</a></td>
+              <td colSpan="2">
+                <Router>
+                  <Link className="btnCheckout" to="/shop/cart">Go to Cart</Link>
+                </Router>
+              </td>
             </tr>
           </tbody>
         </table>

@@ -66,6 +66,7 @@ export const NavListSC = styled.div`
     line-height: 2.5;
     padding-right: 10px;
     margin-bottom: 8%;
+    min-width: 90px;
     text-decoration: none;
     transition: all .3s ease-in-out;
 

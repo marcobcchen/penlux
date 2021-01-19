@@ -14,6 +14,8 @@ const zh = {
   menu4: '通路',
   menu5: '使用方法',
   menu6: '聯絡我們',
+  product: '產品頁',
+  press: '產品動態頁',
 };
 
 export default zh;
